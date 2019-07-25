@@ -8,4 +8,3 @@ before_install:
 script:
   - docker run reonbs/docker-react npm run test -- --coverage
 
-install: travis_wait mvn install

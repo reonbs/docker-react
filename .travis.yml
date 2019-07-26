@@ -5,9 +5,6 @@ services:
 before_install:
   - docker build -t reonbs/docker-react -f Dockerfile.dev .
 
-script:
-  - docker run reonbs/docker-react npm run test -- --coverage
-
 deploy: 
    provider: elasticbeanstalk
    region: "us-east-2"
